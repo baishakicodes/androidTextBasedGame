@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000000"
+    tools:context=".GameScreen">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/gameImageView"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="50dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_weight="4"
+            app:srcCompat="@drawable/estate" />
+
+        <TextView
+            android:id="@+id/gameTextView"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_margin="30dp"
+            android:layout_weight="5"
+            android:text="Can you Figure out Who killed Wendy?!"
+            android:textColor="#FFFFFF"
+            android:textSize="20sp" />
+
+        <Button
+            android:id="@+id/choiceButton1"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginStart="100dp"
+            android:layout_marginLeft="100dp"
+            android:layout_marginEnd="100dp"
+            android:layout_marginRight="100dp"
+            android:layout_weight="1"
+            android:background="#FFFFFF"
+            android:onClick="button1Clicked"
+            android:text="Button"
+            android:textColor="#FFFFFF"
+            android:textColorHighlight="#FFFFFF"
+            android:textColorHint="#00673AB7"
+            android:textColorLink="#FFFFFF"
+            app:backgroundTint="#8F4ADF" />
+
+        <Button
+            android:id="@+id/choiceButton2"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginStart="100dp"
+            android:layout_marginLeft="100dp"
+            android:layout_marginEnd="100dp"
+            android:layout_marginRight="100dp"
+            android:layout_weight="1"
+            android:background="#FFFFFF"
+            android:onClick="button2Clicked"
+            android:text="Button"
+            android:textColor="#FFFFFF"
+            app:backgroundTint="#8F4ADF" />
+
+        <Button
+            android:id="@+id/choiceButton3"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginStart="100dp"
+            android:layout_marginLeft="100dp"
+            android:layout_marginEnd="100dp"
+            android:layout_marginRight="100dp"
+            android:layout_weight="1"
+            android:background="#FFFFFF"
+            android:onClick="button3Clicked"
+            android:text="Button"
+            app:backgroundTint="#8F4ADF" />
+
+        <Button
+            android:id="@+id/choiceButton4"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginStart="100dp"
+            android:layout_marginLeft="100dp"
+            android:layout_marginEnd="100dp"
+            android:layout_marginRight="100dp"
+            android:layout_marginBottom="50dp"
+            android:layout_weight="1"
+            android:background="#FFFFFF"
+            android:onClick="button4Clicked"
+            android:text="Button"
+            app:backgroundTint="#8F4ADF" />
+
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
